@@ -1,13 +1,16 @@
 [package]
-name = "openapiv3"
-version = "2.0.0"
-authors = ["Glade Miller <glademiller@gmail.com>"]
+name = "openapiv3-paper"
+version = "2.0.2"
 edition = "2021"
 license = "MIT/Apache-2.0"
 keywords = ["openapi", "v3"]
-homepage = "https://github.com/glademiller/openapiv3"
-repository = "https://github.com/glademiller/openapiv3"
-description = "This crate provides data structures that represent the OpenAPI v3.0.x specification easily deserializable with serde."
+homepage = "https://github.com/paperclip-rs/openapiv3"
+repository = "https://github.com/paperclip-rs/openapiv3"
+description = "This crate provides data structures that represent the OpenAPI v3.0.x specification easily deserializable with serde. It's a fork from openapiv3 with a simple patch on top."
+
+[lib]
+name = "openapiv3"
+path = "src/lib.rs"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
